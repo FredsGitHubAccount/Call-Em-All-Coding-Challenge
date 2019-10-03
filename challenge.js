@@ -15,14 +15,14 @@ rand13 = () => {
     row = rand11();
     console.log(`Row number : ${row}`);
 
-    // Generates the index, I based this starting off with the first index, without the -1, col=1 & row = 1 would generate index 22 which should be 1, 
+    // Generates the index
     index = column + (row - 1) * 11;
     console.log(`Index hit : ${index}`);
-
-    // If the index does not land in the dead zone return the randomly generated number 
+    
+    // If the index does not land in the dead zone, return the randomly generated number in the console
     if (index <= 117) {
       
-        // Generates the number within the found index by simply taking the index modulo 13
+        // Generates the number within the found index 
         console.log(`Your random number is :  ${1+(index-1) % 13}`);
         return console.log("=====================");
     }

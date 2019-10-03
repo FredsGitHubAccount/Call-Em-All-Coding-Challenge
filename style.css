@@ -1,0 +1,40 @@
+#grid { 
+    display: grid;
+    grid-template-rows: repeat(12,1fr);
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 10px;
+    }
+  #grid > div {
+    font-size: 28px;
+    padding: 5px;
+    background: aqua;
+    text-align: center;
+
+
+  }
+
+  #grid > .column-holder{
+    background: yellow;
+  }
+  
+  #grid > .row-holder{
+      background: crimson;
+  }
+
+  #play-lottery{
+      color:white;
+      background: black;
+      border-radius: 3px;
+      font-size: 16px;
+  
+  }
+
+  #play-lottery:hover {
+      
+    color: aqua;
+  }
+
+  #play-lottery:active {
+  
+    transform: translateY(2px);
+  }
